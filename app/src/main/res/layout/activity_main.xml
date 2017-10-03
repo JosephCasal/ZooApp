@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joseph.zooapp.MainActivity">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:textSize="30sp"
+        android:text="Welcome to the zoo"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/zoo_home2" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btnViewAnimals"-->
+            <!--android:textSize="20sp"-->
+            <!--android:text="View our animals"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="goToAnimals"/>-->
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/btnPopulateDatabse"
+        android:textSize="20sp"
+        android:text="Populate Databse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="populateDatabse"/>
+
+    <Button
+        android:id="@+id/btnViewCategories"
+        android:textSize="20sp"
+        android:text="View our animals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToCategories"/>
+
+
+</LinearLayout>
